@@ -1,0 +1,251 @@
+* {
+	 font-family: 'Oswald', sans-serif;
+	 padding: 0;
+	 margin: 0;
+	 color:black;
+}
+header {
+	height: 70px;
+	width: 100%;
+	background-color: #ced6b8;
+	position: fixed; 
+}
+
+header ul {
+	float: right;
+}
+
+header ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+header h1 { 
+	float: left;
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 13px;
+}
+header h1 a:hover {
+	color: #6e6b65;
+}
+header h1 a {
+	transition: .5s;
+}
+header ul li a:hover {
+	color: #6e6b65;
+}
+header ul li a {
+	transition: .5s;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.container::after {
+	content: '' ;
+	display: block;
+	clear: both;
+}
+.menu-sidebar {
+	float: right;
+	display: none;
+	padding: 15px;
+}
+.menu-sidebar:hover {
+	cursor: pointer;
+}
+@media (max-width: 768px) {
+	.menu-sidebar {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+	.col-4 {
+		width: 50%;
+	}
+	.col-3 {
+		width: 100%;
+	}
+}
+#bar {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 200px;
+	background-color: #6e6b65;
+	z-index: 9999;
+	transition: .5s;
+}
+.sidebar ul li {
+	padding: 25px;
+}
+.sidebar ul li a{
+	color: white;
+}
+.sidebar ul li:hover{
+	background-color: #ced6b8;
+}
+#bar:checked ~ .sidebar{
+	left: 0;
+}
+/*bagian banner*/
+.banner{
+	background: linear-gradient(to top, #ced6b8 0%, white 150%);
+	padding: 153px 0;
+}
+.banner img{
+	width:150px;
+	border-radius:50%;
+	margin-bottom:18px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.b-center{
+	text-align:center;
+}
+.banner h2{
+	margin-bottom:10px;
+}
+.banner p{
+	font-size:18px;
+}
+.banner h2, .banner p, .banner span{
+	color:white;
+}
+section {
+	padding:50px 0;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #F0E68C;
+	left: calc(50% - 20px);
+}
+/*bagian about*/
+#about p{
+	text-align:center;
+	text-indent:38px;
+	line-height:25px;
+	margin-bottom:15px;
+}
+/*bagian skill*/
+#skills {
+	background-color: #ced6b8;
+}
+#skills .l-skill {
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin: 1px 0 20px 0;
+	box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0, 29);
+}
+.l-skill {
+	border-radius: 20px;
+}
+.l-skill .nilai{
+	height: 30px;
+	background-color:  #ced6b8;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	width: 7%;
+	border-radius: 40px;
+	transition: width 2s;
+}
+.vly:hover {
+	width: 90%;
+}
+.ing:hover {
+	width: 50%;
+}
+.ind:hover {
+	width: 80%;
+}
+.mtk:hover {
+	width: 65%;
+}
+/* bagian portfolio*/
+.col-4 {
+	width: 25%;
+	box-sizing: border-box;
+	padding: 5px;
+	float: left;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.col-4 img {
+	width: 100%;
+	box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0, 29);
+	border-radius: 15px;
+}
+.col-4 a:hover img {
+	transform: scale(1.2);
+	transition: 1s;
+}
+/*bagian contact*/
+#contact{
+	background-color:  #ced6b8;
+}
+
+.col-3{
+	width:33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding:50px 10px;
+}
+.col-3 {
+	padding-bottom: 10px;
+	border-bottom:1px solid #ddd;
+	margin-bottom: 15px;
+}
+/*bagian footer*/
+html{
+	scroll-behavior: smooth;
+}
+footer{
+	background-color: #333;
+	padding: 50px;
+	text-align: center;
+}
+footer small{
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
